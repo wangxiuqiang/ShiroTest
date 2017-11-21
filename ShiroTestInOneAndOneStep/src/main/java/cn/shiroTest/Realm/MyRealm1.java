@@ -25,10 +25,10 @@ public class MyRealm1 implements Realm {
         //自己的的zhang的名字
 
         if(!"zhang".equals(username)){
-            throw new UnknownAccountException();//如果用户名错误
+            throw new UnknownAccountException();
         }
         if(!"123".equals(password) ){
-            throw new IncorrectCredentialsException();//如果密码错误
+            throw new IncorrectCredentialsException();
 
         }
         //如果身份认证验证成功，返回一个AuthenticationInfo实现；

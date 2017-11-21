@@ -33,7 +33,17 @@
       <artifactId>junit</artifactId>
       <version>4.10</version>
     </dependency>
-
+<!-- mysql 数据库及 druid 连接池-->
+    <dependency>
+      <groupId>mysql</groupId>
+      <artifactId>mysql-connector-java</artifactId>
+      <version>5.1.25</version>
+    </dependency>
+    <dependency>
+      <groupId>com.alibaba</groupId>
+      <artifactId>druid</artifactId>
+      <version>0.2.23</version>
+    </dependency>
   </dependencies>
   <build>
     <finalName>ShiroTestInOneAndOneStep</finalName>
