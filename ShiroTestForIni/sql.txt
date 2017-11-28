@@ -1,0 +1,10 @@
+create database shiro;
+
+use shiro;
+
+create table users (
+userName varchar(20) NOT NULL,
+password varchar(15) NOT NULL,
+id int primary key NOT NULL
+);
+insert into users(id,userName,password) values(1,'java','java123' );
