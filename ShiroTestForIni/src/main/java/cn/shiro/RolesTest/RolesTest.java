@@ -46,5 +46,6 @@ public class RolesTest {
 //        subject.checkRole("role3");
 //        subject.checkRoles(listRoles);
 //        subject.checkRoles("role1","role2","role3");
+        subject.logout();
     }
 }

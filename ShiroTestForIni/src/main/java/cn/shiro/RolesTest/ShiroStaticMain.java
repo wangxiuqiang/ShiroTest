@@ -8,7 +8,7 @@ import org.apache.shiro.subject.Subject;
 import org.apache.shiro.util.Factory;
 
 public class ShiroStaticMain {
-    public  Subject  login(String configFile , String userName, String password) {
+    public static Subject  login(String configFile , String userName, String password) {
         Factory<SecurityManager> factory = new IniSecurityManagerFactory(configFile);
 
         SecurityManager securityManager = factory.getInstance();
