@@ -30,6 +30,17 @@ public class Permission {
         System.out.println(TorF[2]?"该用户有user:add这个权限":"该用户没有user:add这个权限");
         System.out.println();
         System.out.println(subject.isPermittedAll("user:select","user:delete","user:add")?"该用户全有这三个权限":"该用户不全有这三个权限");
-
+       subject.logout();
+    }
+    /**
+     * 同样和角色一样也有check*方法    ,没返回值  ,没有直接报错 ,
+     */
+    @Test
+    public void checkPermissionTest() {
+       // Subject subject = ShiroStaticMain.login("classpath:ShiroIni/Permission.ini", "shiro", "shiro123");
+         Subject subject = ShiroStaticMain.login("classpath:ShiroIni/Permission.ini","shiro12","shiro123456");
+//        subject.checkPermission("user:add");
+        subject.checkPermissions("user:add","user:select");
+        subject.logout();
     }
 }
