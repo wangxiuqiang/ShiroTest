@@ -13,7 +13,7 @@ import java.util.List;
 
 public class RolesTest {
     @Test
-    public void RolesTestWhoHave(){
+    public void HasRolesTestWhoHave(){
         ShiroStaticMain shiroStaticMain = new ShiroStaticMain();
 //两个不同的subject
         Subject subject = shiroStaticMain.login("classpath:ShiroIni/Roles.ini","shiro","shiro123");
@@ -38,5 +38,13 @@ public class RolesTest {
         System.out.println(TorF[0]?"1该用户有role1权限":"1该用户没有role1权限");
         System.out.println(TorF[1]?"1该用户有role2权限":"1该用户没有role2权限");
         System.out.println(TorF[2]?"1该用户有role3权限":"1该用户没有role3权限");
+
+
+        /**
+         * check*() 方法没有返回值,没有就报错
+         */
+//        subject.checkRole("role3");
+//        subject.checkRoles(listRoles);
+//        subject.checkRoles("role1","role2","role3");
     }
 }
