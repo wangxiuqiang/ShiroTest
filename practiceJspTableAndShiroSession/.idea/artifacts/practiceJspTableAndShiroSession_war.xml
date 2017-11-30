@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="practiceJspTableAndShiroSession:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="practiceJspTableAndShiroSession.war">
+      <element id="artifact" artifact-name="practiceJspTableAndShiroSession:war exploded" />
+    </root>
+  </artifact>
+</component>
