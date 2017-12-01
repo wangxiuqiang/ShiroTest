@@ -22,5 +22,8 @@ ${info}
 <shiro:hasPermission name="student:add">
     有student:add权限的subject<shiro:principal/>
 </shiro:hasPermission>
+<shiro:lacksRole name="admin">
+    我没有admin的角色,不要找我
+</shiro:lacksRole>
 </body>
 </html>
