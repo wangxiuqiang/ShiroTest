@@ -1,0 +1,10 @@
+create database test;
+
+use test;
+
+ create table admin(
+     name char(20) NOT NULL ,
+     password char(20) NOT NULL
+    );
+
+insert into admin(name,password) values("java","java123");
