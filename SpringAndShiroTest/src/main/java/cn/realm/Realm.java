@@ -27,13 +27,13 @@ public class Realm extends AuthorizingRealm{
     @Override
     protected AuthenticationInfo doGetAuthenticationInfo(AuthenticationToken token) throws AuthenticationException {
         String name = (String) token.getPrincipal();
+//         实体类的名要和数据库中的名字一样,才能查出数据.
 
-        //找不到这个User  ,数据库读取不出来
-
+//       System.out.println("Credentials" + token.getCredentials());
 
         try {
             User user = loginTest.getUser(name);
-            if (user != null) {
+            if (user != null ) {
                 AuthenticationInfo authcInfo = new SimpleAuthenticationInfo(user.getName(), user.getPassword(), "xx");
                 return authcInfo;
             } else {

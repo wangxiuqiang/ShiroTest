@@ -26,11 +26,12 @@ public class TestConttoller {
     public String login(User user,Model model) throws Exception{
         Subject subject = SecurityUtils.getSubject();
         UsernamePasswordToken token = new UsernamePasswordToken(user.getName(),user.getPassword());
-        System.out.println(user.getName()  +"\n"  +  user.getPassword());
+        System.out.println("表单传过来的"+user.getName()  +"\n"  +  user.getPassword());
         try{
             subject.login(token);
             return "redirect:/success";
         }catch (Exception e){
+            e.printStackTrace();
             model.addAttribute("no","失败");
             return "index";
         }

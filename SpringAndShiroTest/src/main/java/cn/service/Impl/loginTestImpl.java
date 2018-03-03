@@ -17,7 +17,7 @@ public class loginTestImpl implements loginTest {
            return null;
        }
        else {
-       System.out.println(user.getName() + "\n" + user.getPassword());
+       System.out.println("数据库查出来的"+user.getName() + "\n" + user.getPassword());
        return user;}
     }
 }
