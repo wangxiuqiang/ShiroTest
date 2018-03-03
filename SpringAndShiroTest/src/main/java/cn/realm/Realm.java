@@ -12,7 +12,7 @@ import org.apache.shiro.realm.AuthorizingRealm;
 import org.apache.shiro.subject.PrincipalCollection;
 import org.springframework.beans.factory.annotation.Autowired;
 
-public class Realm extends AuthorizingRealm {
+public class Realm extends AuthorizingRealm{
 
     @Autowired
     loginTestImpl loginTest;

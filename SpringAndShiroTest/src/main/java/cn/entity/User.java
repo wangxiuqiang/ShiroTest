@@ -1,8 +1,8 @@
 package cn.entity;
 
 public class User {
-    private String name;
-    private String password;
+private String name;
+private String password;
 
     public String getName() {
         return name;
